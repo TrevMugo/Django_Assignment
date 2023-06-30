@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+{#      Start by loading static          #}
+    {% load static %}
+{#      Start of JS connection       #}
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+{#      Start of CSS connection #}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/ferrari.css' %}">
+</head>
+<body>
+<h1 class="hed">About Us</h1>
+<hr>
+<h2>Early History</h2>
+<img src="../static/p1.jpeg" alt="">
+<img src="../static/p2.jpeg " alt="">
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Commodi cum cumque debitis esse facere
+    inventore iste molestiae nisi p</p>
+<hr>
+<h2>Development</h2>
+<img src="../static/p3.jpeg " alt="">
+<img src="../static/p4.jpeg " alt="">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad alias aliquam
+    dicta doloribus, eaque eius itaque laborum minus nesciunt nisi
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deleniti enim facere
+    impedit iste labore laudantium minus molestiae molestias nihil obcaecati </p>
+<hr>
+<h2>Future Projects</h2>
+<img src="../static/p5.jpeg" alt="">
+<img src="../static/p6.jpeg" alt="">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Aperiam cupiditate eligendi enim impedit incidunt ipsam
+    molestias nam pariatur placeat, quidem Consequuntur cum
+    neque placeat repellendus suscipit.</p>
+<hr>
+<a href="{% url 'go-home' %}"><button class="btn btn-outline-secondary">Home</button></a>
+<a href="{%url 'go-about' %}"><button class="btn btn-success">About</button></a>
+<a href=""><button class="btn btn-danger">Register</button></a>
+<a href=""><button class="btn btn-info">Login</button></a>
+</body>
+</html>

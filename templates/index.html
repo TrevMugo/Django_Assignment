@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+{#      Start by loading static          #}
+    {% load static %}
+{#      Start of JS connection       #}
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+
+{#      Start of CSS connection #}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/ferrari.css' %}">
+</head>
+<body>
+<h1 class="hed">Ferrari</h1><hr>
+<h2 style="text-align: center;">Welcome to the Ferrari Website!</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    error ex exterminate facilitators, labor
+    molestias natus non officiis</p>
+<hr>
+<img src="../static/p1.jpeg" alt="">
+<img src="../static/p2.jpeg " alt="">
+<img src="../static/p3.jpeg " alt="">
+<img src="../static/p4.jpeg " alt="">
+<img src="../static/p5.jpeg" alt="">
+<img src="../static/p6.jpeg" alt="">
+<hr>
+<a href="{% url 'go-home' %}"><button class="btn btn-outline-secondary">Home</button></a>
+<a href="{%url 'go-about' %}"><button class="btn btn-success">About</button></a>
+<a href=""><button class="btn btn-danger">Register</button></a>
+<a href=""><button class="btn btn-info">Login</button></a>
+
+</body>
+</html>
